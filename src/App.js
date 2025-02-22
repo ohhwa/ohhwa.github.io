@@ -10,7 +10,7 @@ function App() {
           <Typewriter
             options={{
               autoStart: true,
-              loop: true,
+              loop: false,
               delay: 75,
               wrapperClassName: 'typewriter-text',
               html: true,

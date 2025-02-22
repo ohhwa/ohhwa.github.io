@@ -1,43 +1,52 @@
+/* Import font style */
 @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
 
+
+/* App-header */
 .App-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh; 
   display: flex; 
-  justify-content: space-between;
   align-items: center;
   padding: 20px;
-  height: 100vh;
   background-color: #FAECC5;
-  overflow: hidden;
+  overflow-y: auto;
+  box-sizing: border-box; 
 }
 
+
+/* Typying animation */
 .typewriter-text {
+  position: absolute;
   color: #997000;
-  font-size: 1.5rem;
+  font-size: 24px; 
   line-height: 1.8;
-  white-space: nowrap;
-  overflow: hidden;
   font-family: "Parkinsans", sans-serif;
   font-weight: 600;
-  display: inline-block;
 }
 
+
+/* Cursor animation */
 .typewriter-text::after {
   content: '';
   display: inline-block;
   width: 2px;
   height: 1em;
   background-color: #997000;
-  vertical-align: center;
   animation: blink-caret 0.5s step-end infinite;
 }
 
-.parkinsans {
-  font-family: "Parkinsans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+
+/* Remove margin area */
+p {
+  margin: 0;
 }
 
+
+/* Define Cursor animation */
 @keyframes blink-caret {
   from, to {
     background-color: transparent;
